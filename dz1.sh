@@ -11,7 +11,7 @@ while [[ true ]]; do
 	[[ "${input}" =~ ^[0-9]$ ]] || { echo "Введите цифру от 0 до 9"; continue; }
 	if (( "${input}" == rnd )); then
 		TRUEE = $((TRUEE + 1))
-		random_list += "${RED}${rnd}${RESET}"
+		random_list += "${GREEN}${rnd}${RESET}"
 		echo "Вы угадали загаданную цифру"
 	else
 		FALSEE = $((FALSEE + 1))
