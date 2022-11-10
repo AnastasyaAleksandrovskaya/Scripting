@@ -1,5 +1,4 @@
 #!/bin/bash
-
 while getopts "d:n:" option
 do
   case $option in
